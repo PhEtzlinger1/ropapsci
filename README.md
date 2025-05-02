@@ -25,7 +25,7 @@ Writing logic
 - Logic for entire game: max round per game = 5
     -> function playGame that calls playRound to play 5 rounds, keeps track of scores & declares endWinner
         -> create function playGame
-            -> move playRound functoin & score variables so that they're declared inside of a new play Game function
+            -> move playRound function & score variables so that they're declared inside of a new play Game function
             -> play 5 rounds by calling playRound 5 times
             (see hints related to this!)
 

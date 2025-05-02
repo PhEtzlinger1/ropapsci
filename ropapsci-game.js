@@ -9,19 +9,20 @@ let rock = Math.random();
 let scissor = Math.random();
 let paper = Math.random();
 console.log(rock, scissor, paper);
-let maxVal = [rock, scissor, paper];
+let maxVal = [rock, scissor, paper]; //array
 
 // Determination of highest value
 
 function maxValue(maxVal) {
-    let result = []
-    let max = Math.max(...maxVal)
-    for (let i = 0; i < maxVal.length; i++)
-    if (maxVal[i]===max){    
-        return maxVal[i]
+    //let result = []
+    //let max = Math.max(...maxVal)
+    //for (let i = 0; i < maxVal.length; i++)
+    //if (maxVal[i]===max){    
+    //    return maxVal[i]
+    return Math.max(...maxVal);
     }
-    return maxVal
-}
+ //   return maxVal
+// }
 console.log( maxValue(maxVal));
 
 
@@ -55,3 +56,17 @@ switch(humanChoice) {
         text = "Invalid Selection! Select either Rock, Scissor or Paper!";
 }
 console.log(humanChoice);
+
+// Step 4: Determination whether User or Computer wins
+
+//function winner
+//if (humanChoice === computerSelection) {console.log ("Drawn")};
+//if (humanChoice === "rock" && computerSelection === "scissor") {console.log ("Human Winner")};
+//if (humanChoice === "scissor" && computerSelection === "paper") {console.log ("Human Winner")};
+//if (humanChoice === "paper" && computerSelection === "rock") {console.log("Human Winner")};
+//else console.log ("Computer wins");
+
+if (humanChoice === computerSelection) {console.log ("Drawn")};
+if (humanChoice === "rock" && computerSelection === "scissor");  (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
+
+//else console.log ("Computer wins");
