@@ -70,3 +70,9 @@ if (humanChoice === computerSelection) {console.log ("Drawn")};
 if (humanChoice === "rock" && computerSelection === "scissor");  (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
 
 //else console.log ("Computer wins");
+
+
+//new approach using switch:
+let userWins = if(humanChoice === "rock" && computerSelection === "scissor");  (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
+//if (humanChoice === computerSelection) {console.log ("Drawn")};
+//if (humanChoice === "rock" && computerSelection === "scissor");  (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
