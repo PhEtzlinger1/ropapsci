@@ -44,18 +44,72 @@ console.log(computerSelection);
 
 // Step 3: Write the logic to get the human choice
 
-let humanChoice = prompt("Select your weapon: Rock, Scissor or Paper!");
-switch(humanChoice) {
-    case "Rock": humanChoice = "rock";
-    break;
-    case "Scissor": humanChoice = "scissor";
-    break;
-    case "Paper": humanChoice = "paper";
-    break;
-    default:
-        text = "Invalid Selection! Select either Rock, Scissor or Paper!";
-}
+// let humanChoice = prompt("Select your weapon: Rock, Scissor or Paper!")
+
+
+// if (humanChoice != "rock" && humanChoice != "scissor" && humanChoice != "paper") {prompt("Select your weapon to win game" )}
+//     else {
+
+// switch(humanChoice) {
+//     case "rock": humanChoice = "rock"; console.log("User selected rock");
+//     break;
+//     case "scissor": humanChoice = "scissor"; console.log("User selected scissor");
+//     break;
+//     case "paper": humanChoice = "paper"; console.log("User selected paper");
+//     break;
+//     default:
+//         text = "Invalid Selection! Select either Rock, Scissor or Paper!";
+// }
+// }
+// console.log(humanChoice);
+
+// Step 3: Logic human choice with do-while loop
+
+let humanChoice = prompt("Select your weapon: Rock, Scissor or Paper!")
+
+humanChoice = humanChoice.toLowerCase();
 console.log(humanChoice);
+
+// while (humanChoice != "6"); humanChoice = prompt("Select again!");
+
+
+
+// while (humanChoice !== "rock" && humanChoice !== "scissor" && humanChoice !== "paper"); {prompt ("Select a valid weapon!")};
+
+// 222 while (humanChoice.toLocaleLowerCase == "rock") {humanChoice = prompt ("Select a valid weapon!"); console.log("Der User wählte " + humanChoice)};
+
+// while {
+//     switch(humanChoice) {
+//         case "rock": humanChoice = "rock"; console.log("User selected rock");
+//         break;
+//         case "scissor": humanChoice = "scissor"; console.log("User selected scissor");
+//         break;
+//         case "paper": humanChoice = "paper"; console.log("User selected paper");
+//         break;
+//         default:
+//             text = "Invalid Selection! Select either Rock, Scissor or Paper!";
+//     }} while(
+//     if (humanChoice == "rock" && humanChoice == "scissor" && humanChoice == "paper");
+//         else {humanChoice = prompt("Select your weapon: Rock, Scissor or Paper!");
+//     }
+//     console.log(humanChoice);
+
+// do {
+// switch(humanChoice) {
+//     case "rock": humanChoice = "rock"; console.log("User selected rock");
+//     break;
+//     case "scissor": humanChoice = "scissor"; console.log("User selected scissor");
+//     break;
+//     case "paper": humanChoice = "paper"; console.log("User selected paper");
+//     break;
+//     default:
+//         text = "Invalid Selection! Select either Rock, Scissor or Paper!";
+// }} while(
+// if (humanChoice == "rock" && humanChoice == "scissor" && humanChoice == "paper");
+//     else {humanChoice = prompt("Select your weapon: Rock, Scissor or Paper!");
+// }
+// console.log(humanChoice);
+
 
 // Step 4: Determination whether User or Computer wins
 
@@ -67,12 +121,12 @@ console.log(humanChoice);
 //else console.log ("Computer wins");
 
 if (humanChoice === computerSelection) {console.log ("Drawn")};
-if (humanChoice === "rock" && computerSelection === "scissor");  (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
+if (humanChoice === "rock" && computerSelection === "scissor"); (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
 
 //else console.log ("Computer wins");
 
 
 //new approach using switch:
-let userWins = if(humanChoice === "rock" && computerSelection === "scissor");  (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
+// let userWins = if(humanChoice === "rock" && computerSelection === "scissor");  (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
 //if (humanChoice === computerSelection) {console.log ("Drawn")};
 //if (humanChoice === "rock" && computerSelection === "scissor");  (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
