@@ -2,6 +2,14 @@
 
 //Step 1: Create repo on Github & clone project
 
+//Step 2a: Define Points & Rounds and putting whole logic into loop (this was last step)
+
+let userPoint = 0;
+let computerPoint =0;
+let round = 0;
+
+while (round < 5) {
+
 //Step 2: Write ligic to geht the computer choice
 // Computer selection random
 
@@ -24,6 +32,8 @@ function maxValue(maxVal) {
  //   return maxVal
 // }
 console.log( maxValue(maxVal));
+
+
 
 
 
@@ -113,15 +123,21 @@ console.log(humanChoice);
 
 // Step 4: Determination whether User or Computer wins
 
-//function winner
-//if (humanChoice === computerSelection) {console.log ("Drawn")};
-//if (humanChoice === "rock" && computerSelection === "scissor") {console.log ("Human Winner")};
-//if (humanChoice === "scissor" && computerSelection === "paper") {console.log ("Human Winner")};
-//if (humanChoice === "paper" && computerSelection === "rock") {console.log("Human Winner")};
-//else console.log ("Computer wins");
+if (humanChoice === computerSelection) {console.log ("Drawn")}
+else if (
+    (humanChoice === "rock" && computerSelection === "scissor") ||
+    (humanChoice === "scissor" && computerSelection === "paper") ||
+    (humanChoice === "paper" && computerSelection === "rock") 
+)
+        {console.log ("Human Winner"); userPoint++}
+    else {console.log("Computer Winner"); computerPoint++}
 
-if (humanChoice === computerSelection) {console.log ("Drawn")};
-if (humanChoice === "rock" && computerSelection === "scissor"); (humanChoice === "scissor" && computerSelection === "paper"); (humanChoice === "paper" && computerSelection === "rock"); {console.log ("Human Winner")};
+    console.log("Zwischenstand: User "+ userPoint +" : " + computerPoint +" Computer" );
+round++;
+}
+
+if (round > 4) {console.log ("Der Endstand lautet: User "+ userPoint + " : " + computerPoint + " Computer")};
+
 
 //else console.log ("Computer wins");
 

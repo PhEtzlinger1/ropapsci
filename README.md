@@ -13,7 +13,7 @@ Writing logic
 
 - Play Round: Determine Winner after each round
     -> create function playRound
-        -> humanChoice & computerChoice (as argumants)
+        -> humanChoice & computerChoice (as arguments)
             -> humanChoice: Case-insensitive (rock, ROCK, Rock)
             -> logic to determine winner + console.log "name winner"
             -> Increment humanScore or computerScore variable based on the round winner
